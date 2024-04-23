@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Portal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            background-image: url("");
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        form {
+            background-color: lemonchiffon;
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px; /* Adjust the width as needed */
+            position: relative;
+            margin-top: 10px; /* Adjust as needed to control the overlap */
+        }
+
+        img {
+            display: block;
+            margin: 20px auto; /* Center the image and add some top margin */
+            max-width: 20%;
+            height: auto;
+        }
+
+        #contact-logo {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1; /* Ensure the logo appears above the form */
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+        }
+
+        .forgot-password {
+            text-align: right;
+            flex-grow: 1;
+        }
+
+        button {
+            background-color:blue;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 15px auto 0; /* Center the button and add some top margin */
+            display: block; /* Ensure block-level display for margin auto to work */
+        }
+
+        button:hover {
+            background-color: #495057;
+        }
+
+        #redirectMessage {
+            color: #28a745; /* Green color for redirect message */
+            text-align: center;
+            margin-top: 10px;
+            display: none;
+        }
+
+        #error-message {
+            color: #dc3545; /* Red color for error message */
+            text-align: center;
+            margin-top: 10px;
+            display: none;
+        }
+        .company-info {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        .company-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://play-lh.googleusercontent.com/ntR1nKoIVBsSt758Zd5XZ9A-GBs1n3iyyN7PikoKRq2lsOFDIWhD3HcQdMMmmc-1bQ=h500" alt="Company Logo">
+    <h1>Hi, Welcome to emoticup!</h1>
+    <form id="loginForm" onsubmit="return login()" action="C:/Users/NPD EMC/Desktop/march 8/kraft2.html" method="GET">
+        <img id="contact-logo" src="https://th.bing.com/th/id/OIP.Gb4xi3k-tu1DaNbtFzui_wHaHa?rs=1&pid=ImgDetMain"alt="Contact Logo"
+            width="90">
+
+            <div>
+                <p><strong>Company Name:</strong>Infosys</p>
+                <p><strong>Email:</strong> Askus@infosys.com</p>
+                <p><strong>Demo Start Date:</strong> March 15, 2024</p>
+                <p><strong>Demo End Date:</strong> March 18, 2024</p>
+            </div>
+          <button type="submit"> <a href="C:/Users/NPD EMC/Desktop/march 8/fb4.html" style="text-decoration: none; color: inherit;">
+                Proceed
+            </a>
+
+
+       
+
+       
+    </form>
+    
+    <script>
+        function login() {
+            // You can add login logic here if needed
+            alert("Redirecting to the Feedback Form...");
+            return true; // This allows the form to submit
+        }
+    </script>
+
+
+    
+</body>
+
+</html>
